@@ -1,0 +1,29 @@
+{
+  "name": "third-party-services",
+  "version": "1.0.0",
+  "description": "Handles third party APIs for front end projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoai/ThirdPartyServices.git"
+  },
+  "author": "Sushil Tailor <stailor@thestar.ca> (https://www.thestar.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geoai/ThirdPartyServices/issues"
+  },
+  "homepage": "https://github.com/geoai/ThirdPartyServices#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "express": "^4.15.2",
+    "htmlparser2": "^3.9.2",
+    "npm": "^4.5.0",
+    "parse-rss": "^1.0.3",
+    "xml": "^1.0.1",
+    "xmldom": "^0.1.27"
+  }
+}
