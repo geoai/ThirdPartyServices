@@ -27,7 +27,7 @@ app.get('/api/medium/feed/:profile', function(req, res) {
   // });
 
   medium(req.params.profile).then((data) => {
-    res.send();
+    res.send(data);
   });
 });
 
