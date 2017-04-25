@@ -18,7 +18,10 @@ app.use(function(req, res, next) {
 app.get('/api/gdelt/:query', function (req, res) {
   gdelt(req.params.query).then((data) => {
     res.send(data);
-  });
+  })
+  .catch((err) => {
+    res.send('error');
+  });;
 })
 
 app.get('/api/medium/feed/:profile', function(req, res) {
@@ -28,6 +31,9 @@ app.get('/api/medium/feed/:profile', function(req, res) {
 
   medium(req.params.profile).then((data) => {
     res.send(data);
+  })
+  .catch((err) => {
+    res.send('error');
   });
 });
 

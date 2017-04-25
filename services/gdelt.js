@@ -10,5 +10,8 @@ module.exports = function gdelt(query) {
       });
       resolve(responseData);
     })
+    .catch((err) => {
+      reject(err);
+    })
   });
 }
